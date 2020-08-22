@@ -1,0 +1,4 @@
+- Pull the image 
+- To persist the data, create a local volume and attached it into docker run
+- CMD: mkdir -p $HOME/docker/volumes/postgres
+- CMD : docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 -v $HOME/docker/volumes/postgres:/var/lib/postgresql/data  postgres
